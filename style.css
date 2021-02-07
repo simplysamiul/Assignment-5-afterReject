@@ -6,7 +6,12 @@ body{
     
     font-size: 30px;
     font-weight: 700;
-    
+}
+.card{
+    border-radius: 10px 50px;
+}
+.card img{
+    border-radius: 10px 50px;
 }
 .foodCard{
     float: left;
