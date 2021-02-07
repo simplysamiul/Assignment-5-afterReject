@@ -10,21 +10,20 @@ const displayFoodList = foods =>{
 
         const foodInfo = `
         <div class ="foodCard">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
         <img class="bg-dark" src="${individualFood.strCategoryThumb}" class="card-img-top" alt="...">
         <div class="card-body">
-          <a href="#" class="btn d-flex justify-content-center">${individualFood.strCategory}</a>
+        <button class="btn" onclick="displayFoodDetails('${individualFood.strCategory}')">${individualFood.strCategory}</button>
         </div>
-      </div>
-      </div>
-        
-        `
+        </div>
+        </div>
+        `;
         individualFoodDiv.innerHTML = foodInfo;
-
-
         foodCatagoriesDiv.appendChild(individualFoodDiv);
-        
-        
-        
     }
+}
+
+const displayFoodDetails = name =>{
+    console.log(name);
+
 }
