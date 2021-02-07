@@ -1,0 +1,30 @@
+fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
+.then(res => res.json())
+.then(data => displayFoodList(data.categories));
+
+const displayFoodList = foods =>{
+    const foodCatagoriesDiv = document.getElementById("foodCatagories");
+    for (let i = 0; i < foods.length; i++) {
+        const individualFood = foods[i];
+        const individualFoodDiv = document.createElement("div");
+
+        const foodInfo = `
+        <div class ="foodCard">
+        <div class="card" style="width: 18rem;">
+        <img class="bg-dark" src="${individualFood.strCategoryThumb}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn d-flex justify-content-center">${individualFood.strCategory}</a>
+        </div>
+      </div>
+      </div>
+        
+        `
+        individualFoodDiv.innerHTML = foodInfo;
+
+
+        foodCatagoriesDiv.appendChild(individualFoodDiv);
+        
+        
+        
+    }
+}
