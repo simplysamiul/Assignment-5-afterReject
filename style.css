@@ -7,6 +7,11 @@ body{
 #navbarNav ul a{
     font-weight: 600;
 }
+.search-area{
+    width: 50%;
+    margin: auto;
+    
+}
 .card-body a{
     
     font-size: 30px;
@@ -17,28 +22,16 @@ body{
     font-weight: 600;
 }
 .card{
-    border-radius: 10px 50px;
+    border-radius: 10px 10px;
     width: 300px;
     
 }
 .card img{
-    border-radius: 10px 50px;
+    border-radius: 10px 10px;
 }
 .foodCard{
     float: left;
     padding: 10px 10px 10px 0;
     
 }
-form input{
-    padding: 10px 10px !important;
-}
-form{
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-}
-.searchBar{
-    width: 40%; 
-    float: left;
 
-}
